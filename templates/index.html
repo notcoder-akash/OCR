@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OCR Application</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <h1>OCR Application</h1>
+    <form id="upload-form" action="/upload" method="POST" enctype="multipart/form-data">
+        <input type="file" name="image" accept="image/*" required>
+        <button type="submit">Upload Image</button>
+    </form>
+
+    <div id="loading" style="display:none;">
+        <h3>Processing...</h3>
+    </div>
+
+    <div id="result" style="display:none;">
+        <h3>Extracted Text:</h3>
+        <pre id="extracted-text"></pre>
+        <button id="copy-btn">⧉ Copy Text</button>
+    </div>
+
+    <div id="download-prompt" style="display:none;">
+        <h3>Would you like to download the table document?</h3>
+        <button id="yes-btn">Yes</button>
+        <button id="no-btn">No</button>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

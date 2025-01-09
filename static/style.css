@@ -1,0 +1,140 @@
+/* Dark theme base styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212;
+    color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    transition: background-color 0.3s ease;
+}
+
+/* Main header */
+h1 {
+    color: #ffffff;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Form styles */
+form {
+    background-color: #1f1f1f;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* File input field */
+input[type="file"] {
+    background-color: #333;
+    color: #f5f5f5;
+    border: 1px solid #444;
+    padding: 12px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 1em;
+    transition: all 0.3s ease;
+}
+
+input[type="file"]:hover {
+    border-color: #0066cc;
+}
+
+/* Submit button */
+button {
+    padding: 15px 25px;
+    background-color: #0066cc;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #005bb5;
+    transform: translateY(-2px);
+}
+
+/* Result area */
+#result {
+    margin-top: 30px;
+    background-color: #1f1f1f;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 600px;
+    height: 50vh;
+    overflow-y: auto;
+    display: none;
+}
+
+/* Header for extracted text */
+h3 {
+    color: #ffffff;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+/* Preformatted text area */
+pre {
+    background-color: #333;
+    color: #f5f5f5;
+    padding: 20px;
+    border-radius: 5px;
+    overflow-x: auto;
+    font-size: 1em;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+/* Loading spinner */
+#loading {
+    display: none;
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+/* Container for the result */
+#result {
+    position: relative;
+}
+
+/* Style for the Copy Text button */
+#copy-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px 20px;
+    background-color: #0066cc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+#copy-btn:hover {
+    background-color: #005bb5;
+}
+
+#copy-btn:active {
+    background-color: #4CAF50;
+}
