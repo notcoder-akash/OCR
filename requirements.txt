@@ -62,7 +62,6 @@ python-dateutil==2.9.0.post0
 python-docx==1.1.2
 pytweening==1.2.0
 pytz==2024.2
-pywin32==308
 pyzmq==26.2.0
 scikit-learn==1.6.0
 scipy==1.15.0
