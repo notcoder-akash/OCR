@@ -6,7 +6,7 @@ import cv2
 import numpy as np
 from docx import Document
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder='static')
 
 # Set the path for Tesseract OCR executable
 pytesseract.pytesseract.tesseract_cmd = r"C:\Users\akash\TRASH_FILES\configuration\tesseract\tesseract.exe"  # Adjust if necessary
